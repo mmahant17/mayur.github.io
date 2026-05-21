@@ -19,6 +19,7 @@
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#devops-lifecycle">DevOps Lifecycle</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#cv">CV</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -53,8 +54,11 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate Cloud & DevOps Engineer with expertise in designing, deploying, and maintaining scalable cloud infrastructure. With 5+ years of experience in AWS, Kubernetes, and CI/CD automation, I help organizations optimize their cloud operations and achieve digital transformation.</p>
-                    <p>I specialize in containerization, infrastructure-as-code, continuous integration/deployment, and cloud security. My goal is to bridge the gap between development and operations, enabling faster, more reliable software delivery.</p>
+                    <p style="font-size: 1.15rem; color: var(--accent-color); font-weight: 600; margin-bottom: 1.5rem;">
+                        Cloud and DevOps enthusiast, learning emerging technologies, and contributing to both personal and organizational growth.
+                    </p>
+                    <p>I'm <strong>Mayur Mahant</strong>, a passionate Cloud & DevOps Engineer with expertise in designing, deploying, and maintaining scalable cloud infrastructure. With 5+ years of experience in AWS, Kubernetes, and CI/CD automation, I help organizations optimize their cloud operations and achieve digital transformation.</p>
+                    <p>I specialize in containerization, infrastructure-as-code, continuous integration/deployment, and cloud security. My goal is to bridge the gap between development and operations, enabling faster, more reliable software delivery while continuously learning and adapting to emerging technologies.</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat">
@@ -69,6 +73,146 @@
                         <h3><span class="stat-number">200</span>+</h3>
                         <p>Infrastructure Resources</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DevOps Lifecycle Section -->
+    <section id="devops-lifecycle" class="devops-lifecycle">
+        <div class="container">
+            <h2>DevOps Lifecycle & Process</h2>
+            <p class="section-subtitle">Continuous Integration, Continuous Deployment, and Continuous Monitoring</p>
+            
+            <div class="lifecycle-container">
+                <svg viewBox="0 0 1000 600" class="lifecycle-diagram">
+                    <!-- Circle Background -->
+                    <circle cx="500" cy="300" r="280" fill="none" stroke="url(#gradient)" stroke-width="2" stroke-dasharray="5,5"/>
+                    
+                    <!-- Define Gradient -->
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="stagegradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.2" />
+                            <stop offset="100%" style="stop-color:#f093fb;stop-opacity:0.2" />
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Stage 1: Plan -->
+                    <g class="stage" transform="translate(500, 100)">
+                        <circle cx="0" cy="0" r="45" fill="url(#stagegradient)" stroke="#667eea" stroke-width="2"/>
+                        <text x="0" y="0" text-anchor="middle" dy="0.3em" font-size="24" fill="#ffffff" font-weight="bold">📋</text>
+                        <text x="0" y="70" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="600">Plan</text>
+                    </g>
+
+                    <!-- Stage 2: Code -->
+                    <g class="stage" transform="translate(780, 200)">
+                        <circle cx="0" cy="0" r="45" fill="url(#stagegradient)" stroke="#667eea" stroke-width="2"/>
+                        <text x="0" y="0" text-anchor="middle" dy="0.3em" font-size="24" fill="#ffffff" font-weight="bold">💻</text>
+                        <text x="0" y="70" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="600">Code</text>
+                    </g>
+
+                    <!-- Stage 3: Build -->
+                    <g class="stage" transform="translate(780, 400)">
+                        <circle cx="0" cy="0" r="45" fill="url(#stagegradient)" stroke="#667eea" stroke-width="2"/>
+                        <text x="0" y="0" text-anchor="middle" dy="0.3em" font-size="24" fill="#ffffff" font-weight="bold">🔨</text>
+                        <text x="0" y="70" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="600">Build</text>
+                    </g>
+
+                    <!-- Stage 4: Test -->
+                    <g class="stage" transform="translate(500, 500)">
+                        <circle cx="0" cy="0" r="45" fill="url(#stagegradient)" stroke="#667eea" stroke-width="2"/>
+                        <text x="0" y="0" text-anchor="middle" dy="0.3em" font-size="24" fill="#ffffff" font-weight="bold">✅</text>
+                        <text x="0" y="70" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="600">Test</text>
+                    </g>
+
+                    <!-- Stage 5: Release -->
+                    <g class="stage" transform="translate(220, 400)">
+                        <circle cx="0" cy="0" r="45" fill="url(#stagegradient)" stroke="#667eea" stroke-width="2"/>
+                        <text x="0" y="0" text-anchor="middle" dy="0.3em" font-size="24" fill="#ffffff" font-weight="bold">🚀</text>
+                        <text x="0" y="70" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="600">Release</text>
+                    </g>
+
+                    <!-- Stage 6: Deploy -->
+                    <g class="stage" transform="translate(220, 200)">
+                        <circle cx="0" cy="0" r="45" fill="url(#stagegradient)" stroke="#667eea" stroke-width="2"/>
+                        <text x="0" y="0" text-anchor="middle" dy="0.3em" font-size="24" fill="#ffffff" font-weight="bold">⚙️</text>
+                        <text x="0" y="70" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="600">Deploy</text>
+                    </g>
+
+                    <!-- Stage 7: Monitor -->
+                    <g class="stage" transform="translate(500, 600)">
+                        <circle cx="0" cy="0" r="45" fill="url(#stagegradient)" stroke="#667eea" stroke-width="2"/>
+                        <text x="0" y="0" text-anchor="middle" dy="0.3em" font-size="24" fill="#ffffff" font-weight="bold">📊</text>
+                        <text x="0" y="70" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="600">Monitor</text>
+                    </g>
+
+                    <!-- Center Text -->
+                    <text x="500" y="305" text-anchor="middle" font-size="20" fill="#667eea" font-weight="bold">Continuous</text>
+                    <text x="500" y="330" text-anchor="middle" font-size="20" fill="#667eea" font-weight="bold">Integration &amp;</text>
+                    <text x="500" y="355" text-anchor="middle" font-size="20" fill="#667eea" font-weight="bold">Deployment</text>
+
+                    <!-- Arrows connecting stages -->
+                    <path d="M 545 140 L 735 190" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    <path d="M 780 245 L 780 355" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    <path d="M 735 410 L 545 460" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    <path d="M 500 545 L 265 440" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    <path d="M 220 355 L 220 245" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    <path d="M 265 190 L 455 140" stroke="#667eea" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+                    <!-- Arrow marker definition -->
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <polygon points="0 0, 10 3, 0 6" fill="#667eea"/>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- Lifecycle Details -->
+            <div class="lifecycle-details">
+                <div class="lifecycle-detail-card">
+                    <div class="detail-icon">📋</div>
+                    <h4>Plan</h4>
+                    <p>Define requirements, architecture, and infrastructure needs. Collaborate with teams to establish goals and timelines.</p>
+                </div>
+                <div class="lifecycle-detail-card">
+                    <div class="detail-icon">💻</div>
+                    <h4>Code</h4>
+                    <p>Developers write code and commit to version control (Git). Implement CI triggers for automated testing and builds.</p>
+                </div>
+                <div class="lifecycle-detail-card">
+                    <div class="detail-icon">🔨</div>
+                    <h4>Build</h4>
+                    <p>Automated build pipeline compiles code, runs unit tests, and creates artifacts. Docker images are built and pushed to registry.</p>
+                </div>
+                <div class="lifecycle-detail-card">
+                    <div class="detail-icon">✅</div>
+                    <h4>Test</h4>
+                    <p>Automated testing including unit tests, integration tests, security scans, and performance tests. Quality gates ensure standards.</p>
+                </div>
+                <div class="lifecycle-detail-card">
+                    <div class="detail-icon">🚀</div>
+                    <h4>Release</h4>
+                    <p>Prepare release packages, create release notes, and perform final quality checks. Get approval for production deployment.</p>
+                </div>
+                <div class="lifecycle-detail-card">
+                    <div class="detail-icon">⚙️</div>
+                    <h4>Deploy</h4>
+                    <p>Automated deployment to production using IaC and container orchestration. Blue-green or canary deployments ensure zero downtime.</p>
+                </div>
+                <div class="lifecycle-detail-card">
+                    <div class="detail-icon">📊</div>
+                    <h4>Monitor</h4>
+                    <p>Continuous monitoring with metrics, logs, and alerts. Feedback loops inform future improvements and identify issues early.</p>
+                </div>
+                <div class="lifecycle-detail-card">
+                    <div class="detail-icon">🔄</div>
+                    <h4>Feedback Loop</h4>
+                    <p>Monitor insights drive continuous improvement. Issues trigger new plans, creating a continuous cycle of enhancement.</p>
                 </div>
             </div>
         </div>
